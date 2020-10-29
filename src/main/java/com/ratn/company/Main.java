@@ -2,6 +2,10 @@ package com.ratn.company;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -45,9 +49,8 @@ public class Main {
             }
         }*/
 
-
+        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         List<WebElement> priceVals = driver.findElements(By.xpath("//tr//td[2]"));
-
 
         /*driver.get("https://www.facebook.com");
         Select select = new Select(driver.findElement(By.id("day")));
